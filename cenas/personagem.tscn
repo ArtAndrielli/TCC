@@ -1,0 +1,1077 @@
+[gd_scene load_steps=49 format=3 uid="uid://uo2ajpjxxjaa"]
+
+[ext_resource type="Texture2D" uid="uid://bven4mb6j5toq" path="res://pedacos/pixil-frame-0.png" id="1_040wd"]
+[ext_resource type="Script" path="res://scripts/personagem.gd" id="1_cro13"]
+[ext_resource type="Script" path="res://scripts/AsaEsquerda.gd" id="2_egfag"]
+[ext_resource type="Texture2D" uid="uid://dkdtsrbuxv13f" path="res://pedacos/pixil-frame-0 (1).png" id="2_ral7b"]
+[ext_resource type="Script" path="res://scripts/AsaDireita.gd" id="2_yd5hx"]
+[ext_resource type="Texture2D" uid="uid://l8h3ggtd6bi1" path="res://pedacos/pixil-frame-0 (2).png" id="3_cnfr3"]
+[ext_resource type="Script" path="res://scripts/Cauda.gd" id="4_1ydlo"]
+[ext_resource type="Texture2D" uid="uid://yjwls88rg0eq" path="res://pedacos/torax.png" id="4_hd1pg"]
+[ext_resource type="Texture2D" uid="uid://cb6pfsrblq5g8" path="res://pedacos/cauda/base_cauda.png" id="5_jr8mc"]
+[ext_resource type="Texture2D" uid="uid://c57k8jatoarhi" path="res://pedacos/cauda/cauda.png" id="6_77arg"]
+[ext_resource type="Texture2D" uid="uid://xowdaerxm8ls" path="res://pedacos/cauda/ponta_cauda.png" id="7_s5xys"]
+[ext_resource type="Texture2D" uid="uid://b75gugow2cein" path="res://pedacos/cabeça/base_pescoço.png" id="8_utso7"]
+[ext_resource type="Texture2D" uid="uid://cas8oo5ac08c5" path="res://pedacos/cabeça/pescoço.png" id="9_lrggt"]
+[ext_resource type="Texture2D" uid="uid://hricx5r8ht40" path="res://pedacos/cabeça/cabeça.png" id="10_c8dg6"]
+[ext_resource type="Texture2D" uid="uid://bdn8blgyu4eld" path="res://pedacos/perna_direita/coxa_direita.png" id="11_ha2kp"]
+[ext_resource type="Texture2D" uid="uid://drgqs37uu7cki" path="res://pedacos/perna_direita/perna_direita.png" id="12_c6inu"]
+[ext_resource type="Texture2D" uid="uid://co7w7egj231vn" path="res://pedacos/perna_direita/pe_direita.png" id="13_ux3d6"]
+[ext_resource type="Texture2D" uid="uid://d0j3bv1m5u4iq" path="res://pedacos/perna_esquerda/coxa_esquerda.png" id="14_rtmjt"]
+[ext_resource type="Texture2D" uid="uid://oj8vg2wuwyli" path="res://pedacos/perna_esquerda/perna_esquerda.png" id="15_y846s"]
+[ext_resource type="Texture2D" uid="uid://dy5kwqcu51itj" path="res://pedacos/perna_esquerda/pe_esquerda.png" id="16_8les5"]
+[ext_resource type="Texture2D" uid="uid://yx2vle4t1f8v" path="res://pedacos/quadril.png" id="17_y0ac3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpyag"]
+size = Vector2(80.3012, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nxjri"]
+radius = 17.8888
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xfrwd"]
+size = Vector2(59.0306, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_whcgr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c10nk"]
+size = Vector2(41.0043, 18.0025)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nr6a4"]
+size = Vector2(42.0044, 18.0025)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8wsn0"]
+size = Vector2(18.0024, 58.0065)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lh066"]
+radius = 16.0
+height = 58.0001
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_llmej"]
+radius = 6.99738
+height = 43.9852
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prwwc"]
+radius = 16.0
+height = 58.0001
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_76hgr"]
+radius = 16.0001
+height = 34.0001
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ymgs8"]
+radius = 13.0
+height = 40.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3i5bi"]
+radius = 21.0
+height = 58.0
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_cwavh"]
+target_nodepath = NodePath("../Marcadores/MarkerD")
+tip_nodepath = NodePath("centro/primeiroD/segundoD/terceiroD/tip")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 1
+joint_data/0/bone2d_node = NodePath("centro/primeiroD")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 95.0
+joint_data/0/constraint_angle_max = -48.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 2
+joint_data/1/bone2d_node = NodePath("centro/primeiroD/segundoD")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 21.0
+joint_data/1/constraint_angle_max = 11.0
+joint_data/1/constraint_angle_invert = false
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 3
+joint_data/2/bone2d_node = NodePath("centro/primeiroD/segundoD/terceiroD")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 0.0
+joint_data/2/constraint_angle_max = 130.0
+joint_data/2/constraint_angle_invert = false
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_nsn1o"]
+target_nodepath = NodePath("../Marcadores/MarkerE")
+tip_nodepath = NodePath("centro/primeiroD2/segundoD2/terceiroD2/tipE")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 4
+joint_data/0/bone2d_node = NodePath("centro/primeiroD2")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = -132.0
+joint_data/0/constraint_angle_max = 85.0
+joint_data/0/constraint_angle_invert = false
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 5
+joint_data/1/bone2d_node = NodePath("centro/primeiroD2/segundoD2")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 338.0
+joint_data/1/constraint_angle_max = 348.0
+joint_data/1/constraint_angle_invert = false
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 6
+joint_data/2/bone2d_node = NodePath("centro/primeiroD2/segundoD2/terceiroD2")
+joint_data/2/rotate_from_joint = true
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = -360.0
+joint_data/2/constraint_angle_max = 230.0
+joint_data/2/constraint_angle_invert = true
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModification2DFABRIK" id="SkeletonModification2DFABRIK_82qi5"]
+target_nodepath = NodePath("../Marcadores/MarkerCauda")
+fabrik_data_chain_length = 3
+joint_data/0/bone_index = 8
+joint_data/0/bone2d_node = NodePath("centro/Quadril/InicioCauda")
+joint_data/1/bone_index = 9
+joint_data/1/bone2d_node = NodePath("centro/Quadril/InicioCauda/2")
+joint_data/1/magnet_position = Vector2(0, 0)
+joint_data/2/bone_index = 10
+joint_data/2/bone2d_node = NodePath("centro/Quadril/InicioCauda/2/3")
+joint_data/2/magnet_position = Vector2(0, 0)
+joint_data/2/use_target_rotation = false
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_lag4k"]
+target_nodepath = NodePath("../Marcadores/MarkerPernaDir")
+tip_nodepath = NodePath("centro/Quadril/CoxaDireita/PernaDireita/PeDireito/peDir")
+ccdik_data_chain_length = 2
+joint_data/0/bone_index = 11
+joint_data/0/bone2d_node = NodePath("centro/Quadril/CoxaDireita")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = -39.0
+joint_data/0/constraint_angle_max = 360.0
+joint_data/0/constraint_angle_invert = false
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 12
+joint_data/1/bone2d_node = NodePath("centro/Quadril/CoxaDireita/PernaDireita")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = -17.0
+joint_data/1/constraint_angle_max = 25.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_fkplv"]
+target_nodepath = NodePath("../Marcadores/MarkerPernaEsq")
+tip_nodepath = NodePath("centro/Quadril/CoxaEsquerda/PernaEsquerda/PeEsquerdo/peEsq")
+ccdik_data_chain_length = 2
+joint_data/0/bone_index = 14
+joint_data/0/bone2d_node = NodePath("centro/Quadril/CoxaEsquerda")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 39.0
+joint_data/0/constraint_angle_max = 360.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 15
+joint_data/1/bone2d_node = NodePath("centro/Quadril/CoxaEsquerda/PernaEsquerda")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 17.0
+joint_data/1/constraint_angle_max = -25.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_x0p16"]
+target_nodepath = NodePath("../Marcadores/MarkerPescoço")
+tip_nodepath = NodePath("centro/BasePescoco/Pescoco/pescocoTip")
+ccdik_data_chain_length = 2
+joint_data/0/bone_index = 17
+joint_data/0/bone2d_node = NodePath("centro/BasePescoco")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 20.0
+joint_data/0/constraint_angle_max = 340.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 18
+joint_data/1/bone2d_node = NodePath("centro/BasePescoco/Pescoco")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 20.0
+joint_data/1/constraint_angle_max = 340.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_go3vq"]
+bone_index = 19
+bone2d_node = NodePath("centro/BasePescoco/Pescoco/cabeca")
+target_nodepath = NodePath("../Marcadores/MarkerCabeça")
+enable_constraint = true
+constraint_angle_min = 42.0
+constraint_angle_max = 318.0
+constraint_angle_invert = true
+constraint_in_localspace = false
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_fe7ks"]
+enabled = true
+modification_count = 7
+modifications/0 = SubResource("SkeletonModification2DCCDIK_cwavh")
+modifications/1 = SubResource("SkeletonModification2DCCDIK_nsn1o")
+modifications/2 = SubResource("SkeletonModification2DFABRIK_82qi5")
+modifications/3 = SubResource("SkeletonModification2DCCDIK_lag4k")
+modifications/4 = SubResource("SkeletonModification2DCCDIK_fkplv")
+modifications/5 = SubResource("SkeletonModification2DCCDIK_x0p16")
+modifications/6 = SubResource("SkeletonModification2DLookAt_go3vq")
+
+[sub_resource type="Animation" id="Animation_e0llf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marcadores/MarkerPernaDir:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(39, 138)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marcadores/MarkerPernaEsq:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-39, 138)]
+}
+
+[sub_resource type="Animation" id="Animation_55y2n"]
+resource_name = "voo"
+length = 3.0
+step = 0.0333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marcadores/MarkerE:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 2.985),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-159, -108), Vector2(-193, 0), Vector2(-147, 105), Vector2(-41, 143), Vector2(-61, 65), Vector2(-80, 6), Vector2(-159, -108)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marcadores/MarkerD:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4995, 0.999, 1.4985, 1.998, 2.4975, 2.985),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(159, -108), Vector2(193, 0), Vector2(147, 105), Vector2(41, 143), Vector2(61, 65), Vector2(80, 6), Vector2(159, -108)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t4pee"]
+_data = {
+"RESET": SubResource("Animation_e0llf"),
+"voo": SubResource("Animation_55y2n")
+}
+
+[sub_resource type="Animation" id="Animation_xv25c"]
+resource_name = "chao"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marcadores/MarkerPernaEsq:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-17, 158), Vector2(-39, 138)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marcadores/MarkerPernaDir:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 0.115),
+"update": 0,
+"values": [Vector2(17, 158), Vector2(39, 138)]
+}
+
+[sub_resource type="Animation" id="Animation_qjjq1"]
+resource_name = "voo"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marcadores/MarkerPernaDir:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(39, 138), Vector2(17, 158)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marcadores/MarkerPernaEsq:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-39, 138), Vector2(-17, 158)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_da1ug"]
+_data = {
+"chao": SubResource("Animation_xv25c"),
+"voo": SubResource("Animation_qjjq1")
+}
+
+[node name="Personagem" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_cro13")
+
+[node name="Marcadores" type="Node2D" parent="."]
+
+[node name="MarkerE" type="Marker2D" parent="Marcadores"]
+position = Vector2(-169, -109)
+script = ExtResource("2_egfag")
+
+[node name="ColorRect" type="ColorRect" parent="Marcadores/MarkerE"]
+visible = false
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 36.0
+offset_bottom = 37.0
+scale = Vector2(0.200005, 0.16)
+color = Color(1, 0.160784, 0.196078, 1)
+
+[node name="MarkerD" type="Marker2D" parent="Marcadores"]
+position = Vector2(169, -109)
+script = ExtResource("2_yd5hx")
+
+[node name="ColorRect" type="ColorRect" parent="Marcadores/MarkerD"]
+visible = false
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 36.0
+offset_bottom = 37.0
+scale = Vector2(0.200005, 0.16)
+color = Color(1, 0.160784, 0.196078, 1)
+
+[node name="MarkerCauda" type="Marker2D" parent="Marcadores"]
+position = Vector2(0, 208)
+script = ExtResource("4_1ydlo")
+
+[node name="ColorRect" type="ColorRect" parent="Marcadores/MarkerCauda"]
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 36.0
+offset_bottom = 37.0
+scale = Vector2(0.200005, 0.16)
+color = Color(1, 0.160784, 0.196078, 1)
+
+[node name="MarkerPernaDir" type="Marker2D" parent="Marcadores"]
+position = Vector2(39, 138)
+
+[node name="MarkerPernaEsq" type="Marker2D" parent="Marcadores"]
+position = Vector2(-39, 138)
+
+[node name="MarkerPescoço" type="Marker2D" parent="Marcadores"]
+position = Vector2(0, -80)
+
+[node name="MarkerCabeça" type="Marker2D" parent="Marcadores"]
+position = Vector2(0, 219)
+
+[node name="Pedacos" type="Node2D" parent="."]
+scale = Vector2(3, 3)
+
+[node name="Cauda_Com" type="Node2D" parent="Pedacos"]
+
+[node name="PontaCauda" type="Sprite2D" parent="Pedacos/Cauda_Com"]
+texture_filter = 1
+position = Vector2(-0.0645206, 57.3356)
+scale = Vector2(1.0003, 1.0003)
+texture = ExtResource("7_s5xys")
+
+[node name="Cauda" type="Sprite2D" parent="Pedacos/Cauda_Com"]
+texture_filter = 1
+position = Vector2(-0.0457186, 41.6674)
+scale = Vector2(1.00029, 1.00029)
+texture = ExtResource("6_77arg")
+
+[node name="BaseCauda" type="Sprite2D" parent="Pedacos/Cauda_Com"]
+texture_filter = 1
+position = Vector2(-0.0510724, 28.9998)
+scale = Vector2(0.999861, 0.999861)
+texture = ExtResource("5_jr8mc")
+
+[node name="Pernas_Com" type="Node2D" parent="Pedacos"]
+
+[node name="CoxaDireita" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(9.97364, 26.3998)
+rotation = -0.398315
+scale = Vector2(1, 1)
+texture = ExtResource("11_ha2kp")
+
+[node name="PernaDireita" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(14.0283, 39.1877)
+rotation = 0.0380175
+texture = ExtResource("12_c6inu")
+
+[node name="PeDireita" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(13.3911, 47.1692)
+rotation = 0.0380175
+texture = ExtResource("13_ux3d6")
+
+[node name="CoxaEsquerda" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(-9.95433, 26.4079)
+rotation = 0.395585
+texture = ExtResource("14_rtmjt")
+
+[node name="PernaEsquerda" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(-13.9741, 39.2068)
+rotation = -0.0407478
+scale = Vector2(1, 1)
+texture = ExtResource("15_y846s")
+
+[node name="PeEsquerda" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(-13.3151, 47.1866)
+rotation = -0.0407478
+scale = Vector2(1, 1)
+texture = ExtResource("16_8les5")
+
+[node name="Quadril" type="Sprite2D" parent="Pedacos/Pernas_Com"]
+texture_filter = 1
+position = Vector2(0, 20)
+texture = ExtResource("17_y0ac3")
+
+[node name="Torax_Com" type="Node2D" parent="Pedacos"]
+
+[node name="ombroE" type="Sprite2D" parent="Pedacos/Torax_Com"]
+texture_filter = 1
+position = Vector2(-10.0917, -2.41419)
+rotation = 0.837758
+scale = Vector2(0.999978, 0.999978)
+texture = ExtResource("1_040wd")
+offset = Vector2(-20.5, 6.5)
+flip_h = true
+
+[node name="ombroD" type="Sprite2D" parent="Pedacos/Torax_Com"]
+texture_filter = 1
+position = Vector2(10.0918, -2.4142)
+rotation = -0.837758
+scale = Vector2(0.999981, 0.999981)
+texture = ExtResource("1_040wd")
+offset = Vector2(20.5, 6.5)
+
+[node name="Torax" type="Sprite2D" parent="Pedacos/Torax_Com"]
+texture_filter = 1
+position = Vector2(0, 5)
+texture = ExtResource("4_hd1pg")
+
+[node name="BasePescoço" type="Sprite2D" parent="Pedacos/Torax_Com"]
+texture_filter = 1
+position = Vector2(3.03165e-13, -12)
+texture = ExtResource("8_utso7")
+
+[node name="Pescoço" type="Sprite2D" parent="Pedacos/Torax_Com"]
+texture_filter = 1
+position = Vector2(0, -14.6667)
+texture = ExtResource("9_lrggt")
+
+[node name="Braco_Com" type="Node2D" parent="Pedacos"]
+
+[node name="bracoE" type="Sprite2D" parent="Pedacos/Braco_Com"]
+texture_filter = 1
+position = Vector2(-13.7966, -6.03065)
+rotation = 0.628318
+scale = Vector2(0.999978, 0.999978)
+texture = ExtResource("2_ral7b")
+offset = Vector2(-15, 7)
+flip_h = true
+
+[node name="bracoD" type="Sprite2D" parent="Pedacos/Braco_Com"]
+texture_filter = 1
+position = Vector2(13.7966, -6.03067)
+rotation = -0.645772
+scale = Vector2(0.999979, 0.999979)
+texture = ExtResource("2_ral7b")
+offset = Vector2(15, 7)
+
+[node name="antebracoE" type="Sprite2D" parent="Pedacos/Braco_Com"]
+texture_filter = 1
+position = Vector2(-29.1675, -17.1983)
+rotation = 0.628318
+scale = Vector2(0.999998, 0.999998)
+texture = ExtResource("3_cnfr3")
+offset = Vector2(5, 7)
+flip_h = true
+
+[node name="antebracoD" type="Sprite2D" parent="Pedacos/Braco_Com"]
+texture_filter = 1
+position = Vector2(28.772, -17.7329)
+rotation = -0.645772
+scale = Vector2(0.999989, 0.999989)
+texture = ExtResource("3_cnfr3")
+offset = Vector2(-5, 7)
+
+[node name="Cabeça" type="Sprite2D" parent="Pedacos"]
+texture_filter = 1
+position = Vector2(0, -23.6667)
+texture = ExtResource("10_c8dg6")
+
+[node name="ColisaoTerceiroD" type="CollisionShape2D" parent="."]
+position = Vector2(118.678, -70.0721)
+rotation = -0.506146
+scale = Vector2(0.999989, 0.999989)
+shape = SubResource("RectangleShape2D_xpyag")
+
+[node name="ColisaoOmbroDir" type="CollisionShape2D" parent="."]
+position = Vector2(26, -0.999998)
+rotation = -0.837758
+scale = Vector2(1.19998, 1.19998)
+shape = SubResource("CircleShape2D_nxjri")
+
+[node name="ColisaoSegundoD" type="CollisionShape2D" parent="."]
+position = Vector2(63.5274, -34.774)
+rotation = -0.645772
+scale = Vector2(0.999979, 0.999979)
+shape = SubResource("RectangleShape2D_xfrwd")
+
+[node name="ColisaoOmbroEsq" type="CollisionShape2D" parent="."]
+position = Vector2(-26, -1)
+rotation = -2.30383
+scale = Vector2(1.19997, 1.19997)
+shape = SubResource("CircleShape2D_nxjri")
+
+[node name="ColisaoSegundoE" type="CollisionShape2D" parent="."]
+position = Vector2(-63.8151, -34.385)
+rotation = -2.51327
+scale = Vector2(0.999978, 0.999978)
+shape = SubResource("RectangleShape2D_xfrwd")
+
+[node name="ColisaoTerceiroE" type="CollisionShape2D" parent="."]
+position = Vector2(-120.154, -67.9011)
+rotation = -2.6529
+scale = Vector2(0.999998, 0.999998)
+shape = SubResource("RectangleShape2D_xpyag")
+
+[node name="ColisaoTorax" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-18, -22, -29, -16, -29, 22, -21, 57, 0, 69, 21, 58, 29, 22, 29, -17, 18, -22)
+
+[node name="ColisaoBacia" type="CollisionShape2D" parent="."]
+position = Vector2(0, 60)
+scale = Vector2(3.36, 1.68)
+shape = SubResource("CircleShape2D_whcgr")
+debug_color = Color(0.98204, 0, 0.365748, 0.42)
+
+[node name="ColisaoInicioCauda" type="CollisionShape2D" parent="."]
+position = Vector2(-7.38964e-13, 88)
+rotation = 1.5708
+scale = Vector2(0.999861, 0.999861)
+shape = SubResource("RectangleShape2D_c10nk")
+disabled = true
+
+[node name="Colisao2" type="CollisionShape2D" parent="."]
+position = Vector2(6.99576e-07, 127)
+rotation = 1.5708
+scale = Vector2(1.00029, 1.00029)
+shape = SubResource("RectangleShape2D_nr6a4")
+disabled = true
+
+[node name="Colisao3" type="CollisionShape2D" parent="."]
+position = Vector2(1.39946e-06, 174.514)
+scale = Vector2(1.0003, 1.0003)
+shape = SubResource("RectangleShape2D_8wsn0")
+disabled = true
+
+[node name="ColisaoCoxaDireita" type="CollisionShape2D" parent="."]
+position = Vector2(34.3836, 79.4915)
+rotation = -0.398315
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_lh066")
+
+[node name="ColisaoPernaDireita" type="CollisionShape2D" parent="."]
+position = Vector2(42.6752, 121.971)
+rotation = 0.0380175
+shape = SubResource("CapsuleShape2D_llmej")
+
+[node name="ColisaoPeDireito" type="CollisionPolygon2D" parent="."]
+position = Vector2(42.1591, 137.789)
+rotation = -3.10357
+scale = Vector2(1, -1)
+polygon = PackedVector2Array(0.300184, -1.99196, -9.66731, -0.70076, -16.4025, 8.5002, -16.2276, 14.4982, 16.7898, 14.5353, 16.6147, 8.53741, 8.35487, -0.226044)
+
+[node name="ColisaoCoxaEsquerda" type="CollisionShape2D" parent="."]
+position = Vector2(-34.3248, 79.5279)
+rotation = 0.395585
+shape = SubResource("CapsuleShape2D_prwwc")
+
+[node name="ColisaoPernaEsquerda" type="CollisionShape2D" parent="."]
+position = Vector2(-42.7995, 121.682)
+rotation = -0.0407479
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_llmej")
+
+[node name="ColisaoPeEsquerdo" type="CollisionPolygon2D" parent="."]
+position = Vector2(-41.8329, 137.779)
+rotation = -0.0407479
+scale = Vector2(1, 1)
+polygon = PackedVector2Array(0.300184, -1.99196, -9.66731, -0.70076, -16.4025, 8.5002, -16.2276, 14.4982, 16.7898, 14.5353, 16.6147, 8.53741, 8.35487, -0.226044)
+
+[node name="ColisaoBasePescoco" type="CollisionShape2D" parent="."]
+position = Vector2(0, -29)
+shape = SubResource("CapsuleShape2D_76hgr")
+
+[node name="ColisaoPescoco" type="CollisionShape2D" parent="."]
+position = Vector2(0, -49)
+shape = SubResource("CapsuleShape2D_ymgs8")
+
+[node name="ColisaoCabeca" type="CollisionShape2D" parent="."]
+position = Vector2(0, -69)
+shape = SubResource("CapsuleShape2D_3i5bi")
+
+[node name="Esqueleto" type="Skeleton2D" parent="."]
+modification_stack = SubResource("SkeletonModificationStack2D_fe7ks")
+
+[node name="centro" type="Bone2D" parent="Esqueleto"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro"]
+position = Vector2(0, 15)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../Pedacos/Torax_Com/Torax")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro"]
+remote_path = NodePath("../../../ColisaoTorax")
+
+[node name="primeiroD" type="Bone2D" parent="Esqueleto/centro"]
+position = Vector2(26, -1)
+rotation = -0.261799
+scale = Vector2(0.999981, 0.999981)
+rest = Transform2D(0.965907, -0.258814, 0.258814, 0.965907, 26, -1)
+auto_calculate_length_and_angle = false
+length = 24.0
+bone_angle = -15.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD"]
+position = Vector2(7.5, -1)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../Pedacos/Torax_Com/ombroD")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD"]
+position = Vector2(-2.83122e-06, -5.96046e-07)
+scale = Vector2(1.2, 1.2)
+remote_path = NodePath("../../../../ColisaoOmbroDir")
+
+[node name="segundoD" type="Bone2D" parent="Esqueleto/centro/primeiroD"]
+position = Vector2(23, 0)
+rotation = 0.2618
+scale = Vector2(0.999999, 0.999999)
+rest = Transform2D(0.965925, 0.258819, -0.258819, 0.965925, 23, 0)
+auto_calculate_length_and_angle = false
+length = 57.0
+bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD/segundoD"]
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../Pedacos/Braco_Com/bracoD")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD/segundoD"]
+position = Vector2(27.72, 0)
+remote_path = NodePath("../../../../../ColisaoSegundoD")
+
+[node name="terceiroD" type="Bone2D" parent="Esqueleto/centro/primeiroD/segundoD"]
+position = Vector2(57.0088, -1.00016)
+scale = Vector2(1.00001, 1.00001)
+rest = Transform2D(1.00001, 0, 0, 1.00001, 57.0088, -1.00016)
+auto_calculate_length_and_angle = false
+length = 72.0
+bone_angle = 8.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD/segundoD/terceiroD"]
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../Pedacos/Braco_Com/antebracoD")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD/segundoD/terceiroD"]
+position = Vector2(36, 6)
+rotation = 0.139626
+remote_path = NodePath("../../../../../../ColisaoTerceiroD")
+
+[node name="tip" type="Marker2D" parent="Esqueleto/centro/primeiroD/segundoD/terceiroD"]
+position = Vector2(72, 10)
+
+[node name="primeiroD2" type="Bone2D" parent="Esqueleto/centro"]
+position = Vector2(-26, -1)
+rotation = -2.87979
+scale = Vector2(0.999978, 0.999978)
+rest = Transform2D(-0.965905, -0.258813, 0.258813, -0.965905, -26, -1)
+auto_calculate_length_and_angle = false
+length = 24.0
+bone_angle = 15.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2"]
+position = Vector2(7.5, 1)
+scale = Vector2(-3, -3)
+remote_path = NodePath("../../../../Pedacos/Torax_Com/ombroE")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2"]
+scale = Vector2(1.2, 1.2)
+remote_path = NodePath("../../../../ColisaoOmbroEsq")
+
+[node name="segundoD2" type="Bone2D" parent="Esqueleto/centro/primeiroD2"]
+position = Vector2(23, 0)
+rotation = -0.261799
+rest = Transform2D(0.965926, -0.258819, 0.258819, 0.965926, 23, 0)
+auto_calculate_length_and_angle = false
+length = 57.0
+bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2/segundoD2"]
+scale = Vector2(-3, -3)
+remote_path = NodePath("../../../../../Pedacos/Braco_Com/bracoE")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2/segundoD2"]
+position = Vector2(27.72, 0)
+remote_path = NodePath("../../../../../ColisaoSegundoE")
+
+[node name="terceiroD2" type="Bone2D" parent="Esqueleto/centro/primeiroD2/segundoD2"]
+position = Vector2(57, 0)
+scale = Vector2(1.00002, 1.00002)
+rest = Transform2D(1.00002, 0, 0, 1.00002, 57, 0)
+auto_calculate_length_and_angle = false
+length = 72.0
+bone_angle = -8.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2/segundoD2/terceiroD2"]
+scale = Vector2(-3, -3)
+remote_path = NodePath("../../../../../../Pedacos/Braco_Com/antebracoE")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/primeiroD2/segundoD2/terceiroD2"]
+position = Vector2(36, -6)
+rotation = -0.139626
+remote_path = NodePath("../../../../../../ColisaoTerceiroE")
+
+[node name="tipE" type="Marker2D" parent="Esqueleto/centro/primeiroD2/segundoD2/terceiroD2"]
+position = Vector2(72, -10)
+
+[node name="Quadril" type="Bone2D" parent="Esqueleto/centro"]
+position = Vector2(0, 50)
+rest = Transform2D(1, 0, 0, 1, 0, 50)
+auto_calculate_length_and_angle = false
+length = 50.0
+bone_angle = 0.0
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril"]
+position = Vector2(0, 10)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../Pedacos/Pernas_Com/Quadril")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril"]
+position = Vector2(0, 10)
+scale = Vector2(3.36, 1.68)
+remote_path = NodePath("../../../../ColisaoBacia")
+
+[node name="InicioCauda" type="Bone2D" parent="Esqueleto/centro/Quadril"]
+position = Vector2(-5.68434e-14, 18)
+rotation = 1.56365
+scale = Vector2(0.999861, 0.999861)
+rest = Transform2D(0.00714169, 0.999835, -0.999835, 0.00714169, -5.68434e-14, 18)
+auto_calculate_length_and_angle = false
+length = 40.0
+bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda"]
+position = Vector2(19.002, 0.15324)
+rotation = -1.5708
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../Pedacos/Cauda_Com/BaseCauda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda"]
+position = Vector2(20.0028, 1.51017e-06)
+remote_path = NodePath("../../../../../ColisaoInicioCauda")
+
+[node name="2" type="Bone2D" parent="Esqueleto/centro/Quadril/InicioCauda"]
+position = Vector2(40, 8.9407e-08)
+scale = Vector2(1.00004, 1.00004)
+rest = Transform2D(1.00004, 0, 0, 1.00004, 40, 8.9407e-08)
+auto_calculate_length_and_angle = false
+length = 40.0
+bone_angle = 0.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda/2"]
+position = Vector2(17.0029, 0.137118)
+rotation = -1.5708
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../Pedacos/Cauda_Com/Cauda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda/2"]
+position = Vector2(19.0001, 1.43447e-06)
+remote_path = NodePath("../../../../../../Colisao2")
+
+[node name="3" type="Bone2D" parent="Esqueleto/centro/Quadril/InicioCauda/2"]
+position = Vector2(40, 2.98023e-07)
+rotation = -1.5708
+scale = Vector2(1.00002, 1.00002)
+rest = Transform2D(-4.42378e-08, -1.00002, 1.00002, -4.42378e-08, 40, 2.98023e-07)
+auto_calculate_length_and_angle = false
+length = 40.0
+bone_angle = 90.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda/2/3"]
+position = Vector2(-0.193505, 23.9937)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../../Pedacos/Cauda_Com/PontaCauda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/InicioCauda/2/3"]
+position = Vector2(0, 26.5)
+remote_path = NodePath("../../../../../../../Colisao3")
+
+[node name="CoxaDireita" type="Bone2D" parent="Esqueleto/centro/Quadril"]
+position = Vector2(21, 8)
+rest = Transform2D(1, 0, 0, 1, 21, 8)
+auto_calculate_length_and_angle = false
+length = 50.0
+bone_angle = 86.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita"]
+position = Vector2(0, 23)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../Pedacos/Pernas_Com/CoxaDireita")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita"]
+position = Vector2(4.00002, 25.0001)
+remote_path = NodePath("../../../../../ColisaoCoxaDireita")
+
+[node name="PernaDireita" type="Bone2D" parent="Esqueleto/centro/Quadril/CoxaDireita"]
+position = Vector2(4, 49)
+rest = Transform2D(1, 0, 0, 1, 4, 49)
+auto_calculate_length_and_angle = false
+length = 37.0007
+bone_angle = 90.0002
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita"]
+position = Vector2(-1, 16)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../Pedacos/Pernas_Com/PernaDireita")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita"]
+position = Vector2(-0.242509, 20.3828)
+remote_path = NodePath("../../../../../../ColisaoPernaDireita")
+
+[node name="PeDireito" type="Bone2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita"]
+position = Vector2(0, 37)
+rest = Transform2D(1, 0, 0, 1, 0, 37)
+auto_calculate_length_and_angle = false
+length = 11.0
+bone_angle = 90.0
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita/PeDireito"]
+position = Vector2(-2, 3)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../../Pedacos/Pernas_Com/PeDireita")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita/PeDireito"]
+position = Vector2(-0.157, -0.791)
+scale = Vector2(-1, 1)
+remote_path = NodePath("../../../../../../../ColisaoPeDireito")
+
+[node name="peDir" type="Marker2D" parent="Esqueleto/centro/Quadril/CoxaDireita/PernaDireita/PeDireito"]
+position = Vector2(0, 12)
+
+[node name="CoxaEsquerda" type="Bone2D" parent="Esqueleto/centro/Quadril"]
+position = Vector2(-21, 8)
+rest = Transform2D(1, 0, 0, 1, -21, 8)
+auto_calculate_length_and_angle = false
+length = 50.0
+bone_angle = 94.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda"]
+position = Vector2(0, 23)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../Pedacos/Pernas_Com/CoxaEsquerda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda"]
+position = Vector2(-4, 25)
+remote_path = NodePath("../../../../../ColisaoCoxaEsquerda")
+
+[node name="PernaEsquerda" type="Bone2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda"]
+position = Vector2(-4, 49)
+rest = Transform2D(1, 0, 0, 1, -4, 49)
+auto_calculate_length_and_angle = false
+length = 36.0004
+bone_angle = 90.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda"]
+position = Vector2(1, 16)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../Pedacos/Pernas_Com/PernaEsquerda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda"]
+position = Vector2(-0.0419998, 20.022)
+remote_path = NodePath("../../../../../../ColisaoPernaEsquerda")
+
+[node name="PeEsquerdo" type="Bone2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda"]
+position = Vector2(0, 36)
+rest = Transform2D(1, 0, 0, 1, 0, 36)
+auto_calculate_length_and_angle = false
+length = 11.0
+bone_angle = 90.0
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda/PeEsquerdo"]
+position = Vector2(2, 4)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../../Pedacos/Pernas_Com/PeEsquerda")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda/PeEsquerdo"]
+position = Vector2(0.268, 0.146)
+remote_path = NodePath("../../../../../../../ColisaoPeEsquerdo")
+
+[node name="peEsq" type="Marker2D" parent="Esqueleto/centro/Quadril/CoxaEsquerda/PernaEsquerda/PeEsquerdo"]
+position = Vector2(0, 12)
+
+[node name="BasePescoco" type="Bone2D" parent="Esqueleto/centro"]
+position = Vector2(0, -17)
+rest = Transform2D(1, 0, 0, 1, 0, -17)
+auto_calculate_length_and_angle = false
+length = 19.0
+bone_angle = -90.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco"]
+position = Vector2(9.09495e-13, -19)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../Pedacos/Torax_Com/BasePescoço")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco"]
+position = Vector2(0, -12)
+remote_path = NodePath("../../../../ColisaoBasePescoco")
+
+[node name="Pescoco" type="Bone2D" parent="Esqueleto/centro/BasePescoco"]
+position = Vector2(0, -19)
+rest = Transform2D(1, 0, 0, 1, 0, -19)
+auto_calculate_length_and_angle = false
+length = 36.0
+bone_angle = -90.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco/Pescoco"]
+position = Vector2(0, -8)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../Pedacos/Torax_Com/Pescoço")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco/Pescoco"]
+position = Vector2(0, -13)
+remote_path = NodePath("../../../../../ColisaoPescoco")
+
+[node name="cabeca" type="Bone2D" parent="Esqueleto/centro/BasePescoco/Pescoco"]
+position = Vector2(0, -36)
+rest = Transform2D(1, 0, 0, 1, 0, -36)
+auto_calculate_length_and_angle = false
+length = 29.0
+bone_angle = 90.0
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco/Pescoco/cabeca"]
+position = Vector2(0, 1)
+scale = Vector2(3, 3)
+remote_path = NodePath("../../../../../../Pedacos/Cabeça")
+
+[node name="colisor" type="RemoteTransform2D" parent="Esqueleto/centro/BasePescoco/Pescoco/cabeca"]
+position = Vector2(0, 3)
+remote_path = NodePath("../../../../../../ColisaoCabeca")
+
+[node name="pescocoTip" type="Marker2D" parent="Esqueleto/centro/BasePescoco/Pescoco"]
+position = Vector2(0, -38)
+
+[node name="Timers" type="Node2D" parent="."]
+
+[node name="jump" type="Timer" parent="Timers"]
+wait_time = 0.15
+one_shot = true
+
+[node name="RayCastCauda" type="RayCast2D" parent="."]
+position = Vector2(0, 68)
+exclude_parent = false
+target_position = Vector2(0, 139)
+hit_from_inside = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, 187)
+rotation = -1.5708
+exclude_parent = false
+target_position = Vector2(0, 5)
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, 0)
+zoom = Vector2(2, 2)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+callback_mode_process = 0
+libraries = {
+"": SubResource("AnimationLibrary_t4pee")
+}
+speed_scale = 2.5
+
+[node name="AnimationLegs" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_da1ug")
+}
+
+[connection signal="timeout" from="Timers/jump" to="." method="_on_jump_timeout"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="AnimationLegs" to="." method="_on_animation_legs_animation_finished"]

@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://moeduadu0gpn"]
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_lusm6"]
+target_nodepath = NodePath("../alvo")
+tip_nodepath = NodePath("base/meio/ponta/final_da_ponta")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("base")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 265.0
+joint_data/0/constraint_angle_max = 360.0
+joint_data/0/constraint_angle_invert = false
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("base/meio")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 265.0
+joint_data/1/constraint_angle_max = 360.0
+joint_data/1/constraint_angle_invert = false
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("base/meio/ponta")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 265.0
+joint_data/2/constraint_angle_max = 360.0
+joint_data/2/constraint_angle_invert = false
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_mojeh"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_lusm6")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+modification_stack = SubResource("SkeletonModificationStack2D_mojeh")
+
+[node name="base" type="Bone2D" parent="Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+auto_calculate_length_and_angle = false
+length = 62.096
+bone_angle = 0.000155199
+metadata/_local_pose_override_enabled_ = true
+
+[node name="meio" type="Bone2D" parent="Skeleton2D/base"]
+position = Vector2(62, 0)
+rest = Transform2D(1, 0, 0, 1, 62, 0)
+auto_calculate_length_and_angle = false
+length = 71.009
+bone_angle = -0.807004
+metadata/_local_pose_override_enabled_ = true
+
+[node name="ponta" type="Bone2D" parent="Skeleton2D/base/meio"]
+position = Vector2(71, -1)
+rest = Transform2D(1, 0, 0, 1, 71, -1)
+auto_calculate_length_and_angle = false
+length = 61.012
+bone_angle = 0.939117
+metadata/_local_pose_override_enabled_ = true
+
+[node name="final_da_ponta" type="Marker2D" parent="Skeleton2D/base/meio/ponta"]
+position = Vector2(63, 1)
+scale = Vector2(1, 1)
+
+[node name="alvo" type="Marker2D" parent="."]
+position = Vector2(-60, -16)
+gizmo_extents = 0.0
+
+[node name="ColorRect" type="ColorRect" parent="alvo"]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 39.0
+offset_bottom = 39.0
+scale = Vector2(0.0799975, 0.08)
+color = Color(1, 0.141176, 0.12549, 1)
